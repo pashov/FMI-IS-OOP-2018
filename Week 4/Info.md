@@ -8,16 +8,16 @@
 
  Чрез шаблоните в С++ можем да създаваме шаблонни функции и шаблонни класове(структури). В случаят синтаксисът е следният: преди декларацията на функцията/класа записваме 
 
-template <typename typeParameter>
+template < typename typeParameter >
 
-template <class typeParameter>
+template < class typeParameter >
 
 като template  е запазена дума за шаблон, typeParameter е типов параметър, който ще използваме като тип на данните, описани след шаблона(по принцип се използва T, защото е кратко и общо прието), a typename и class са 2 запазени думи, които правят едно и също. typename е по-използвано.
 
 
 
 Пример за шаблонна функция:
-template <typename T>
+template < typename T >
 
 T findMax(T number1, T number2)
 
@@ -29,7 +29,7 @@ T findMax(T number1, T number2)
 
 
 
-template <typename T, typename U>
+template < typename T, typename U >
 
 void printNumbers(T number1, U number2)
 
@@ -45,17 +45,17 @@ cout << number1 <<  " " << number2 << ''\n';
 
 int a = 10, b = 100;
 
-cout << findMax<int>(a, b);
+cout << findMax< int >(a, b);
 
 long c = 10000;
 
-printNumbers<int, long>(a, c);
+printNumbers< int, long >(a, c);
 
 
 
 Пример за шаблонен клас:
 
-template <typename T>
+template < typename T >
 
 class myContainer 
 
