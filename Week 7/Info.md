@@ -22,7 +22,7 @@ int data;
 
 Node* next;
 
-Node(const int data, const Node* next) 
+Node(const int data, const Node*& next) 
 
 {
 
